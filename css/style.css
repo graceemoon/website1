@@ -21,6 +21,29 @@ a:hover {
 	color: #7989ff;
 }
 
+.cloud {
+	position: absolute;
+	display: inline-block;
+	background-color: #fafafa;
+	height: 3.5em;
+	width: 8em;
+	left: 50%;
+	top: 30%;
+	border-radius: 5em;
+}
+.cloud:before {
+	/*color: #fafafa;*/
+	content: '';
+	position: absolute;
+	display: inline-block;
+	background-color: #fafafa;
+	height: 4em;
+	width: 4em;
+	border-radius: 100%;
+	left: 2em;
+	top: -1.8em;
+}
+
 /*img zooms in when hovered*/
 /*doesnt work with span on top width + height 100% boo*/
 /*.proj img {
