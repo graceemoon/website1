@@ -13,6 +13,13 @@ nav li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+	color: #fefefe;
+}
+a:hover {
+	color: #7989ff;
+}
 
 /*img zooms in when hovered*/
 /*doesnt work with span on top width + height 100% boo*/
