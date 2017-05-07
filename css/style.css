@@ -13,3 +13,14 @@ nav li {
 	list-style: none;
 }
 
+
+/*img zooms in when hovered*/
+/*doesnt work with span on top width + height 100% boo*/
+/*.proj img {
+	transition: all 1s ease;
+}
+.proj img:hover {
+	transform: scale(1.1);
+}
+*/
+
