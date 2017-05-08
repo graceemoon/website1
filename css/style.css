@@ -55,6 +55,44 @@ a:hover {
 	top: -1.8em;
 }
 
+.cloud2 {
+	z-index: -1;
+	position: absolute;
+	display: inline-block;
+	background-color: #aeaeae;
+	height: 1.8em;
+	width: 5em;
+	left: 7em;
+	top: -.8em;
+	border-radius: 5em;
+	animation: toleft 5s infinite linear;
+}
+@keyframes toleft {
+	0% {
+		opacity:0;
+		left: 7em;}
+	50% {
+		opacity: 1;
+		left: 2em;
+	}
+	100% {
+		opacity: 0;
+		left: -3em;
+	}
+}
+
+.cloud2:before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	background-color: #aeaeae;
+	height: 2.7em;
+	width: 2.7em;
+	border-radius: 100%;
+	left: 1.2em;
+	top: -1em;
+}
+
 .sun {
 	position: absolute;
 	display: inline-block;
@@ -64,7 +102,7 @@ a:hover {
 	left: 50%;
 	top: 45%;
 	border-radius: 100%;
-	animation: spin 12s infinite linear;
+	animation: spin 30s infinite linear;
 }
 @keyframes spin {
 	100% {transform: rotate(360deg);}
