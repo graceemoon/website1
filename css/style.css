@@ -104,7 +104,7 @@ a:hover {
 	left: 50%;
 	top: 45%;
 	border-radius: 100%;
-	animation: spin 30s infinite linear;
+	animation: spin 60s infinite linear;
 }
 @keyframes spin {
 	100% {transform: rotate(360deg);}
@@ -120,6 +120,13 @@ a:hover {
 	top: -2.8em;
 	left: 2.1em;
 	box-shadow: 0 8.4em #ffe83b;
+	animation: blink 3s infinite linear;
+}
+@keyframes blink {
+	0% {opacity: .5;}
+	50% {opacity: 1;}
+	90% {opacity: 1;}
+	100%{opacity: .5;}
 }
 
 .ray:before {
