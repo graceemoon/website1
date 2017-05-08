@@ -33,6 +33,7 @@ a:hover {
 	font-size: 1em; /* control icon size here */
 }
 
+/*CLOUDY*/
 .cloud {
 	position: absolute;
 	display: inline-block;
@@ -93,6 +94,7 @@ a:hover {
 	top: -1em;
 }
 
+/*SUNNY*/
 .sun {
 	position: absolute;
 	display: inline-block;
@@ -150,6 +152,33 @@ a:hover {
 	transform: rotate(-60deg);
 	transform-origin: 50% 5.3em;
 }
+
+/*SLIGHTLY CLOUDY*/
+.slightly-cloudy .sun {
+	position: absolute;
+	display: inline-block;
+	background-color: #fff94c;
+	height: 5em;
+	width: 5em;
+	left: 50%;
+	top: 70%;
+	border-radius: 100%;
+}
+
+.slightly-cloudy .cloud {
+	position: absolute;
+	display: inline-block;
+	background-color: #fafafa;
+	height: 3.5em;
+	width: 8em;
+	left: 50%;
+	top: 76%;
+	border-radius: 5em;
+}
+
+
+
+
 
 
 
