@@ -30,7 +30,15 @@ a:hover {
 	font-size: 1em; /* control icon size here */
 }
 
-/*.icons {}*/
+
+h3 {
+	display: block;
+	text-align: center;
+}
+/*.icons {
+	text-align: center;
+}*/
+
 
 
 /*CLOUDY*/
