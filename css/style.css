@@ -233,6 +233,66 @@ a:hover {
 	box-shadow: 3em -1.5em #00baff;
 }
 
+.thunder .cloud {
+	position: absolute;
+	display: inline-block;
+	background-color: #fafafa;
+	height: 3.5em;
+	width: 8em;
+	left: 30%;
+	top: 50%;
+	border-radius: 5em;
+}
+.thunder .lightning {
+	position: absolute;
+	display: inline-block;
+	background-color: #fff94c;
+	height: 3em;
+	width: .7em;
+	left: 30%;
+	top: 1em;
+	border-radius: 5em;
+	transform: rotate(30deg);
+	/*box-shadow: 1.5em 2.33em #fff94c;*/
+	animation: flicker 1s infinite linear;
+}
+@keyframes flicker{
+	0%{background-color: #fff94c;}
+	70%{background-color: #fff94c;}
+	90%{background-color: #dadada;}
+	100%{background-color: #fff94c;}
+}
+.lightning:before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	background-color: #fff94c;
+	height: 2.1em;
+	width: .7em;
+	left: .8em;
+	top: 1.65em;
+	border-radius: 5em;
+	transform: rotate(90deg);
+	animation: flicker 1s infinite linear;
+}
+.lightning:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	background-color: #fff94c;
+	height: 3em;
+	width: .7em;
+	left: 1.5em;
+	top: 2.33em;
+	border-radius: 5em;
+	animation: flicker 1s infinite linear;
+}
+
+.lightning:nth-child(2) {
+	font-size: .7em;
+	top: 3em;
+	left: 7.5em;
+}
 
 
 /*img zooms in when hovered*/
