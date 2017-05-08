@@ -20,6 +20,18 @@ a {
 a:hover {
 	color: #7989ff;
 }
+/*.icons {
+	position: relative;
+	background-color: #aaaaaa;
+	margin: 5em;
+}*/
+.icon {
+/*  position: relative;
+  display: inline-block;
+  width: 12em;
+  height: 10em;*/
+	font-size: 1em; /* control icon size here */
+}
 
 .cloud {
 	position: absolute;
@@ -32,7 +44,6 @@ a:hover {
 	border-radius: 5em;
 }
 .cloud:before {
-	/*color: #fafafa;*/
 	content: '';
 	position: absolute;
 	display: inline-block;
@@ -44,6 +55,66 @@ a:hover {
 	top: -1.8em;
 }
 
+.sun {
+	position: absolute;
+	display: inline-block;
+	background-color: #fff94c;
+	height: 5em;
+	width: 5em;
+	left: 50%;
+	top: 45%;
+	border-radius: 100%;
+	animation: spin 12s infinite linear;
+}
+@keyframes spin {
+	100% {transform: rotate(360deg);}
+}
+.ray {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	height: 2.2em;
+	width: .7em;
+	border-radius: 3em;
+	background-color: #ffe83b;
+	top: -2.8em;
+	left: 2.1em;
+	box-shadow: 0 8.3em #ffe83b;
+}
+
+.ray:before {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	content: '';
+	height: 2.2em;
+	width: .7em;
+	border-radius: 3em;
+	background-color: #ffe83b;
+/*	top: -2.8em;
+	left: 2.1em;*/
+	box-shadow: 0 8.3em #ffe83b;
+	transform: rotate(60deg);
+	transform-origin: 50% 5.5em;
+}
+.ray:after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	content: '';
+	height: 2.2em;
+	width: .7em;
+	border-radius: 3em;
+	background-color: #ffe83b;
+/*	top: -2.8em;
+	left: 2.1em;*/
+	box-shadow: 0 8.3em #ffe83b;
+	transform: rotate(-60deg);
+	transform-origin: 50% 5.3em;
+}
+
+
+
 /*img zooms in when hovered*/
 /*doesnt work with span on top width + height 100% boo*/
 /*.proj img {
@@ -53,4 +124,8 @@ a:hover {
 	transform: scale(1.1);
 }
 */
+footer {
+	bottom: 0;
+	position: fixed;
 
+}
