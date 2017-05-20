@@ -19,10 +19,6 @@ $('.about-button').click(function() {
 	$('html, body').animate({
 		scrollTop: $('.about').offset().top
 	}, 400);
-	// $(".home-button").css("color", "#101010");
-	// $(".about-button").css("color", "#ffaa33");
-	// $(".projects-button").css("color", "#101010");
-	// $(".contact-button").css("color", "#101010");
 });
 
 //to projects
@@ -30,20 +26,12 @@ $('.projects-button').click(function() {
 	$('html, body').animate({
 		scrollTop: $('.projects').offset().top
 	}, 400);
-	// $(".home-button").css("color", "#101010");
-	// $(".about-button").css("color", "#101010");
-	// $(".projects-button").css("color", "#ffaa33");
-	// $(".contact-button").css("color", "#101010");
 });
 
 $('.contact-button').click(function() {
 	$('html, body').animate({
 		scrollTop: $('.contact').offset().top
 	}, 400);
-	// $(".home-button").css("color", "#101010");
-	// $(".about-button").css("color", "#101010");
-	// $(".projects-button").css("color", "#101010");
-	// $(".contact-button").css("color", "#ffaa33");
 });
 
 
@@ -121,10 +109,4 @@ $('.navi').click(() => {
 
 
 
-//when nav's about/projects/contact clicked
-//make animate to that page-----
-// $('.home-button').click(function() {
-// 	$('html, body').animate({
-// 		scrollTop: $('.home').offset().top
-// 	}, 400);
 
